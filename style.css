@@ -1,36 +1,346 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+.default{
+  width: 1695px;
+  height: 1194.719970703125px;
+  transform: rotate(0deg);
+  opacity: 1;
+  padding-top: 80px;
+  padding-right: 127.5px;
+  padding-bottom: 80px;
+  padding-left: 127.5px;
+  background: var(--color-white-solid, #FFFFFF);
 }
-body {
+.container {
+  width: 1440px;
+  height: 1034.719970703125px;
+  max-width: 1440px;
+  gap: 33px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.header {
+  width: 1440px;
+  height: 44px;
+  gap: 10px;
+  transform: rotate(0deg);
+  opacity: 1;margin-bottom: 30px;
+}
+.promo-banner{
+  
+  width: 1440px;
+  height: 44px;
+  transform: rotate(0deg);
+  opacity: 1;
+
+  /* Typography */
+  font-family: 'Font 1'; /* Replace with actual font name */
+  font-weight: 600; /* SemiBold = 600 */
+  font-style: normal;
+  font-size: 36px;
+  line-height: 43.56px;
+  letter-spacing: -1.22px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* Colors */
+  
+color: var(--color-grey-7, #111111);
+
+}
+.product-bundle{
+   width: 1440px;
+  height: 957.719970703125px;
+  gap: 40px;
+  transform: rotate(0deg);
+  opacity: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
+  
 }
-a {
-  display: inline-block;
-  color: lightgrey;
+.grid-custom{
+   width: 1040px;
+  height: 957.719970703125px;
+  gap: 48px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.frame-4{
+  width: 1040px;
+  height: 454.8599853515625px;
+  gap: 30px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+}
+.product-card {
+  width: 326.6666564941406px;
+  height: 454.8599853515625px;
+  gap: 15px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product-image {
+  width: 326.6666564941406px;
+  height: 326.6600036621094px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product-info {
+  width: 326.6666564941406px;
+  height: 113.19999694824219px;
+  gap: 0.5px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product-title {
+  width: 326.6666564941406px;
+  height: 18px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product-form-bundle {
+  width: 326.6666564941406px;
+  height: 94.69999694824219px;
+  padding-top: 9.7px;
+  gap: 15px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.product-pricing {
+  width: 56px;
+  height: 15px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+}
+.product-text{
+  
+  width: 56px;
+  height: 15px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Font 1'; /* Replace with actual font name if needed */
+  font-weight: 400; /* Regular = 400 */
+  font-style: normal;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+
+
+}
+.bundle-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  padding: 0 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #111111;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.bundle-btn:hover {
+  background-color: #f2f2f2;
+}
+.btn-icon {
+  font-size: 20px;
+  font-weight: 600;
+}
+.frame-6{
+   width: 1040px;
+  height: 454.8599853515625px;
+  gap: 30px;
+  transform: rotate(0deg);
+  opacity: 1;
+  display: flex;
+}
+/* Sticky Sidebar Enhancements */
+.sticky-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 305px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-left: 1px solid #e0e0e0;
+  overflow-y: auto;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
+.sticky-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Header Section */
+.sticky-top-heading .heading-2-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.heading-middle {
+  margin-bottom: 16px;
+}
+
+.heading-middle-txt {
+  font-size: 14px;
+  color: #444;
+}
+
+.heading-middle-txt span {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Progress Bar */
+.progress-bundle-bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #222;
+  transition: width 0.3s ease;
+}
+
+/* Margin container (products) */
+.margin-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.frm-1 {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.image-from-product {
+  width: 60px;
+  height: 60px;
+  background: #eee;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.content-from-product {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Footer Styles */
+.footer {
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.horizontal-footer-1,
+.horizontal-footer-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.discount-text,
+.heading-5 {
+  font-weight: 500;
+  color: #333;
+}
+
+.price-text,
+.subtotal-price {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Button */
+.btn-card {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #111;
   color: white;
-  transform: scale(1.03);
-  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 12px;
 }
-a:active {
-  transform: scale(0.98);
+
+.btn-card:hover {
+  background-color: #333;
 }
+
+.btn-label-card {
+  flex: 1;
+  text-align: left;
+}
+
+.btn-icon-card img {
+  width: 16px;
+  height: 16px;
+}
+.frm-10 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
